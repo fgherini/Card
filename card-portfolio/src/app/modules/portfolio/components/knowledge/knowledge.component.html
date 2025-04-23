@@ -1,0 +1,14 @@
+<div>
+    <!--<h2>Stack</h2>-->
+    <ul>
+        <li *ngFor="let icon of arrayKnowledge()">
+            <img
+                [src]="icon.src"
+                [alt]="icon.alt"
+                loading="lazy"
+                width="40px"
+                height="40px"
+            />
+        </li>
+    </ul>
+</div>

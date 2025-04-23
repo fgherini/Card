@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>recent projects</h2>
+    <ul>
+        <li *ngFor="let project of arrayProjects()">
+            <button (click)="openDialog(project)">
+                <img [src]="project.src" [alt]="project.alt" [attr.width]="project.width" [attr.height]="project.height" loading="lazy">
+            </button>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>work experience</h2>
+    <details *ngFor="let exp of arrayExperiences()">
+        <summary>
+            <p> 
+                <strong> {{ exp.summary.strong }}</strong>
+                {{ exp.summary.p }}
+            </p>
+        </summary>
+        <!--[innerHTML]="exp.text"-->
+        <article >
+            <p>{{ exp.text }}</p>
+            <p>{{ exp.text2 }}</p>
+        </article>
+    </details>
+</div>
